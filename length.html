@@ -1,46 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unit Converter</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div>
-        <h1>Unit Converter</h1>
-        <nav>
-            <a href="length.html">Length</a> |
-            <a href="weight.html">Weight</a> |
-            <a href="temperature.html">Temperature</a>
-        </nav>
-        <div id="app">
+      <h1>Unit Converter</h1>
+      <nav>
+        <a href="length.html">Length</a> | <a href="weight.html">Weight</a> |
+        <a href="temperature.html">Temperature</a>
+      </nav>
+      <div id="errorMessage"></div>
+      <div id="app">
         <form id="form">
-            <label for="lengthInput">Enter the length to convert</label><br>
-            <input type="text" id="lengthInput" name="lengthInput"><br>
+          <label for="lengthInput">Enter the length to convert</label><br />
+          <input type="text" id="lengthInput" name="lengthInput" /><br />
 
-            <label for="unitFrom">Unit to convert from</label><br>
-            <select id="unitFrom" name="unitFrom">
-                <option value="feet">Feet (ft)</option>
-                <option value="inches">Inches (in)</option>
-                <option value="meters">Meters (m)</option>
-                <option value="centimeters">Centimeters (cm)</option>
-            </select><br>
+          <label for="unitFrom">Unit to convert from</label><br />
+          <select id="unitFrom" name="unitFrom">
+            <option value="feet">Feet (ft)</option>
+            <option value="inches">Inches (in)</option>
+            <option value="meters">Meters (m)</option>
+            <option value="centimeters">Centimeters (cm)</option></select
+          ><br />
 
-            <label for="unitTo">Unit to convert to</label><br>
-            <select id="unitTo" name="unitTo">
-                <option value="feet">Feet (ft)</option>
-                <option value="inches">Inches (in)</option>
-                <option value="meters">Meters (m)</option>
-                <option value="centimeters">Centimeters (cm)</option>
-            </select><br>
+          <label for="unitTo">Unit to convert to</label><br />
+          <select id="unitTo" name="unitTo">
+            <option value="feet">Feet (ft)</option>
+            <option value="inches">Inches (in)</option>
+            <option value="meters">Meters (m)</option>
+            <option value="centimeters">Centimeters (cm)</option></select
+          ><br />
 
-            <button type="submit">Convert</button>
+          <button type="submit">Convert</button>
         </form>
-        </div>
+      </div>
     </div>
 
     <script src="length.js"></script>
-
-</body>
+  </body>
 </html>
