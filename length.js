@@ -29,10 +29,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     ) {
       if (unitFrom === "feet") {
         result = inputValue * 12;
-        resultunit = "ft";
+        resultunit = "in";
       } else {
         result = inputValue / 12;
-        resultunit = "in";
+        resultunit = "ft";
       }
       app.innerHTML = `  <div>
         <p>Result of your calculation</p>
